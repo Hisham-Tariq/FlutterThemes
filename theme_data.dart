@@ -41,6 +41,7 @@ class CustomTheme {
       canvasColor: colors.background,
       cardTheme: CardTheme(
         color: colors.surface1,
+        clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
         ),
