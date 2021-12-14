@@ -37,13 +37,13 @@ class CustomTheme {
     return ThemeData(
       brightness: brightness,
       useMaterial3: true,
-      scaffoldBackgroundColor: colors.surface,
-      backgroundColor: colors.surface,
-      canvasColor: colors.surface,
-      textSelectionTheme: TextSelectionThemeData(
-        selectionColor: colors.secondary,
-        selectionHandleColor: colors.secondary,
-        cursorColor: colors.secondary,
+      scaffoldBackgroundColor: colors.background,
+      canvasColor: colors.background,
+      cardTheme: CardTheme(
+        color: colors.surface1,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: colors.primary,
@@ -55,7 +55,7 @@ class CustomTheme {
           backgroundColor: colors.primary,
           primary: colors.onPrimary,
           shape: const StadiumBorder(),
-          minimumSize: const Size(2000, 50),
+          minimumSize: const Size(200, 50),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -167,6 +167,8 @@ class CustomTheme {
         onError: colors.onError,
         errorContainer: colors.errorContainer,
         onErrorContainer: colors.onErrorContainer,
+        inversePrimary: colors.inversePrimary,
+        shadow: colors.shadow,
       ),
     );
   }
