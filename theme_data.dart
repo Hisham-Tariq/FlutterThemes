@@ -39,13 +39,16 @@ class CustomTheme {
       useMaterial3: true,
       scaffoldBackgroundColor: colors.background,
       canvasColor: colors.background,
-      cardColor: colors.surface1,
+      cardColor: colors.surfaceVariant,
       cardTheme: CardTheme(
-        color: colors.surface1,
+        color: colors.surfaceVariant,
         clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
         ),
+      ),
+      drawerTheme: DrawerThemeData(
+        backgroundColor: colors.surface1,
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: colors.primary,
@@ -72,7 +75,7 @@ class CustomTheme {
         backgroundColor: colors.inverseSurface,
       ),
       dialogTheme: DialogTheme(
-        backgroundColor: colors.surface,
+        backgroundColor: colors.surface3,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
         ),
