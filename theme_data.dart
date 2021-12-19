@@ -39,6 +39,7 @@ class CustomTheme {
       useMaterial3: true,
       scaffoldBackgroundColor: colors.background,
       canvasColor: colors.background,
+      cardColor: colors.surface1,
       cardTheme: CardTheme(
         color: colors.surface1,
         clipBehavior: Clip.antiAlias,
