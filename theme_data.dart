@@ -53,6 +53,11 @@ class CustomTheme {
       appBarTheme: AppBarTheme(
         backgroundColor: colors.primary,
         iconTheme: IconThemeData(color: colors.onPrimary),
+        titleTextStyle: AppTextStyle(
+          color: colors.onPrimary,
+          fontSize: 14.0,
+        ),
+        elevation: 0.0,
       ),
       textTheme: appTextTheme,
       textButtonTheme: TextButtonThemeData(
